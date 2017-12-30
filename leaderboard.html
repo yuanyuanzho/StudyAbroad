@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Leaderboard</title>  
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+        <link href="css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="main.css" rel="stylesheet">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+		
+		<script src="http://code.jquery.com/jquery-1.5.min.js"></script>   
+        <script src="http://cdn.wideskyhosting.com/js/jquery.validate.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script> 
+        <script src="js/star-rating.js" type="text/javascript"></script>       
+		<script type="text/javascript">
+		$(function(){
+          $("#btn1").click(function(){
+        var check1=parseInt($("#globalselect").val());
+		var check2=$("#globalrate").val();
+		var check3= $('#globalselect option:selected').text();
+		switch(check1)
+      {
+          case 1:
+              $(".rated:eq(0)").val(check2);
+			  alert("you rated"+""+ check3+ ":"+check2+""+"stars")
+                break;
+          case 2:
+              $(".rated:eq(1)").val(check2);
+			  alert("you rated"+""+ check3+ ":"+check2+""+"stars")
+               break;
+		  case 3:
+              $(".rated:eq(2)").val(check2);
+			  alert("you rated"+""+ check3+ ":"+check2+""+"stars")
+               break;
+          case 4:
+              $(".rated:eq(3)").val(check2);
+			  alert("you rated"+""+ check3+ ":"+check2+""+"stars")
+               break;
+          case 5:
+              $(".rated:eq(4)").val(check2);
+			  alert("you rated"+""+ check3+ ":"+check2+""+"stars")
+               break;
+          case 6:
+              $(".rated:eq(5)").val(check2);
+			  alert("you rated"+""+ check3+ ":"+check2+""+"stars")
+               break;
+          case 7:
+              $(".rated:eq(6)").val(check2);
+			  alert("you rated"+""+ check3+ ":"+check2+""+"stars")
+               break;
+	      case 8:
+              $(".rated:eq(7)").val(check2);
+			  alert("you rated"+""+ check3+ ":"+check2+""+"stars")
+               break;	
+          case 9:
+              $(".rated:eq(8)").val(check2);
+			  alert("you rated"+""+ check3+ ":"+check2+""+"stars")
+               break;				   
+               default:
+  alert("Please make your selection!")
+}
+	});
+	
+	
+});
+</script>
+		
+    </head>
+
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50"> 
+        <nav style="background-color:#A8DBCA; border-bottom-color: #A8DBCA " class="navbar navbar-inverse navbar-fixed-top" id="nav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbra">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#myPage">Study Abroad</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbra">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                        <li><a href="course.html">Course</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user" ></span> SignUp</a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="contact" class="tab-content">
+            <h2 class="text-center"><img src="images/leaderboard.png" alt="Leaderboard"></h2>  
+            </br></br>
+			
+            <div class="row" id ="rankingIcon">
+                <h3>Please choose the ranking:</h3>
+                
+                <section class="col-sm-4">
+                    <img class="icon" src="images/C1.png" alt="Icon">	
+                    <h4><a href="#America">America</a></h4>
+                    <p>USA pays much attention on the importance of education. There are hundreds of well-known universities in America.</p>
+                </section>
+
+                <section class="col-sm-4">
+                    <img class="icon" src="images/C4.png" alt="Icon">
+                    <h4><a href="#England">England</a></h4>
+                    <p>England has one of the best teaching quality in the world. British universities, colleges and schools are providing dynamic and challenging environment to students.</p>
+                </section>
+
+                <section class="col-sm-4">
+                    <img class="icon" src="images/C5.png" alt="Icon">
+                    <h4><a href="#Australia">Australia</a></h4>
+                    <p>Australia offers international students a wide variety of courses. There are total of more than 22000 courses involving more than 1200 education institutions.</p>
+                </section>
+
+                <section class="col-sm-4 col-sm-offset-1">
+                    <img class="icon" src="images/CE.png" alt="Icon">
+                    <h4><a href="#Global">Global</a></h4>
+                    <p>There are lots of universities in the world, choose your dream one.</p>
+                </section>
+
+                <section class="col-sm-4 col-sm-offset-1">
+                    <img class="icon" src="images/CU.png" alt="Icon">
+                    <h4><a href="#Users">Users</a></h4>
+                    <p>User can rate the university. Click "users" to find out the ranking made by our users!</p>
+                </section> 
+
+                    
+            </div>
+	        </br></br><hr>
+	
+            <div id="Global">
+                <h3 class="text-center">Global Rankings</h3>
+                <div class="well">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#1">Overall ranking</a></li>
+                        <li><a data-toggle="tab" href="#2">Law ranking</a></li>
+                        <li><a data-toggle="tab" href="#3">Engineering ranking</a></li>
+                        <li><a data-toggle="tab" href="#4">Business ranking</a></li>
+                        <li><a data-toggle="tab" href="#5">Science ranking</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="1" class="tab-pane fade in active">
+                            <div class="row"> </br>
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/1.png" alt="number 1" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="images/harvard.jpg" alt="harvard" height="100" width="100"></figure>
+                                        <div class="floatRight">
+                                            <h5>Harvard University</h5>
+                                            <p> 
+											    Harvard University ranked first in "2017 USNews World University Ranking" in the 1 name. Harvard University, the flagship of university education in the United States, the Ivy League representative, the Harvard Business School is the planet's best business school, Harvard University, all undergraduate education level is the world's top. And Yale University, Oxford University and Cambridge University and known as the best university on Earth, is the United States one of the most difficult to apply for the university. <a href =http://www.harvard.edu/>For more</a>
+                                            </p>
+                                        </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/2.png" alt="number 2" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/mit.jpg" alt="mit" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Massachusetts Institute of Technology</h5>
+                                        <p>
+                                            Massachusetts Institute of Technology in the "2017 USNews World University Rankings" in the first two . The mission of the Massachusetts Institute of Technology is to advance the advancement of science, technology and other academic fields and to train students in the 21st century to best serve the country and the world. The scientific and technological challenges of our time are on the rise, and we have to face the daunting task of quantitative analysis and complex, integrated problems.  <a href =http://www.harvard.edu>For more</a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/3.png" alt="number 3" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/stanford.jpg" alt="stanford" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Stanford University</h5>
+                                        <p>
+                                            Stanford University ranked No. 3 in the "2017 USNews World University Rankings" . Stanford University is recognized as a world famous university. In addition to the well-known professors to teach first-class knowledge, the school also has a very rich extra-curricular activities and participate in research, independent research and public service opportunities. The mission of the school is "to enable students to achieve personal achievement, become useful material" and "through the impact of human and civilization, for the public welfare.
+                                        <a href =http://www.stanford.edu>For more</a>
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/4.png" alt="number 4" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/berkeley.jpg" alt="berkeley" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of California-Berkeley</h5>
+                                        <p>
+                                            University of California at Berkeley in "2017 USNews World University Rankings" in the fourth . - University of California, Berkeley is a world-renowned university, in the US News issued by the civil engineering, environmental engineering, ecology, chemistry, computer science and related professional rankings are ranked first in the United States. -US News ranked the school 21th in the nation and the top 10 in 130 professional ranks.
+                                         <a href =http://www.berkeley.edu>For more</a>
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/5.png" alt="number 5" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/cit.jpg" alt="cit" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>California Institute of Technology</h5>
+                                        <p>
+                                            California Institute of Technology in the "2017 USNews World University Rankings" in the first five . California Institute of Technology in Pasadena, California, it is generally known as the "California Institute of Technology." California Institute of Technology is a private elite research institute, the school has a total of 6 teaching division, providing 24 professional and 6 minor professional, engineering and technical courses which prestigious.
+                                            <a href =http://www.caltech.edu/>For more</a>                                      
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/6.png" alt="number 6" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="images/oxford.jpg" alt="oxford" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Oxford</h5>
+                                        <p>
+                                            Oxford University (University of Oxford) is the English-speaking world's oldest university, a "genius and the cradle of the prime minister," said the name. Is one of Britain's most prestigious institutions of higher learning, Oxford University is famous in the world, its reputation has been growing, one third from the British mainland students. 93% of the students expressed satisfaction with their classroom quality. The school's teachers are from all over the world's highly academic authority.
+                                        <a href =http://www.ox.ac.uk/>For more</a>   
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/7.png" alt="number 7" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="images/cambridge.jpg" alt="cambridge" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Cambridge</h5>
+                                        <p>
+                                            The University of Cambridge is one of the top ten universities in the world. It is famous for its outstanding educational quality. Many famous scientists, writers and politicians in Britain come from this university. 2011 US News and World Report and higher education research institutions QS jointly published US NEWS-QS World University Rankings ranked first in the world. Cambridge is a city in the east of England, 50 kilometers north of London.
+                                        <a href =https://www.cam.ac.uk/>For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/8.png" alt="number 8" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/princeton.jpg" alt="princeton" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Princeton University</h5>
+                                        <p>
+                                            Princeton University in the "2017 USNews World University Rankings" ranked eighth . Princeton University was founded in 1746, is a Ivy League private university. The 600-acre campus is located in a neighborhood of Princeton, 50 miles southwest of New York City. The main campus buildings are of the Grurean and Gothic styles, as well as modern buildings designed by IM Pei and Robert Venturi.
+                                          <a href =https://www.princeton.edu/main/>For more</a>                                        
+									   </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/9.png" alt="number 9" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/columbia.jpg" alt="columbia" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Columbia University</h5>
+                                        <p>
+                                            Columbia University in the "2017 USNews World University Rankings" ranked ninth . Columbia University is located in the world's most prosperous city - New York City. Columbia University covers a number of academic fields, is a leader in the field of science; creative vision of the field of creativity; the new benchmark in the field of humanities and innovative ideas in the field of engineering.
+                                        <a href =http://www.columbia.edu/>For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+            
+                        <div id="2" class="tab-pane fade">
+                              <div class="row">
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/1.png" alt="number 1" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/cambridge.jpg" alt="cambridge" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Cambridge</h5>
+                                        <p>
+                                            The University of Cambridge is one of the top ten universities in the world. It is famous for its outstanding educational quality. Many famous scientists, writers and politicians in Britain come from this university. 2011 US News and World Report and higher education research institutions QS jointly published US NEWS-QS World University Rankings ranked first in the world. Cambridge is a city in the east of England, 50 kilometers north of London. 
+                                         <a href =https://www.cam.ac.uk/>For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/2.png" alt="number 2"width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/oxford.jpg" alt="oxford" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Oxford university</h5>
+                                        <p>
+                                            Oxford University (University of Oxford) is the English-speaking world's oldest university, a "genius and the cradle of the prime minister," said the name. Is one of Britain's most prestigious institutions of higher learning, Oxford University is famous in the world, its reputation has been growing, one third from the British mainland students. 93% of the students expressed satisfaction with their classroom quality. The school's teachers are from all over the world's highly academic authority. 
+                                        <a href =http://www.ox.ac.uk/>For more</a>   
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img   src="images/3.png" alt="number 3" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/london.jpg" alt="london" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University College London</h5>
+                                        <p>
+                                            University College London (University College London), the British Guard ranked sixth. Is a comprehensive university established in 1826, the United Kingdom following Oxford, Cambridge after the third old university. London University College and Oxford University, Cambridge University, Imperial College of Technology, London School of Economics and Political Science, together known as G5 Super Elite University. University of London College of the British government to enjoy the most budget, is a member of the Golden Triangle.
+                                        <a href ='#'>For more</a>   
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/4.png" alt="number 4" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/imperial.jpg" alt="imperial" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Imperial College of Technology</h5>
+                                        
+                                        <p>
+                                            Imperial College London The main campus of Imperial College London is located in the heart of London - South Kensington. In 1996, the UK Higher Education Fund Committee's research assessment, mathematics, computer science, chemical engineering, civil engineering, mechanical engineering And other 15 professional have scored five points, teachers are extremely strong, with excellent teaching ability.
+                                        <a href ="#">For more</a>   
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/5.png" alt="number 5" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/king.jpg" alt="king" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>King's College London</h5>
+                                        
+                                        <p>
+                                            King's College London is one of the world's top 30 universities in the heart of London and the fourth oldest school in the UK. In its 2008 study of UK universities, 23 departments were among the top universities in the UK , King's College London in humanities, law, and social sciences, including international affairs has a very outstanding achievement. Ranked 31 in the Guardian.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/6.png" alt="number 6" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/edinburgh.jpg" alt="edinburgh" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Edinburgh</h5>
+                                        
+                                        <p>
+                                            The University of Edinburgh is located in the heart of Edinburgh, the capital of Scotland, the fourth in Scotland and the sixth university in the English world. Ranked 15th in the British Guardian, RAE was awarded in 2008 by high-quality experimental research and high-quality teaching institutions, ranking one of the top 20 in the world. 
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/7.png" alt="number 7" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/manchester.jpg" alt="manchester" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Manchester</h5>
+                                        <p>
+                                            The University of Manchester is a compact city campus, within walking distance to Oxford Road in the city center. The university has a lot of flexible opportunities to offer to students, including study abroad and industrial arrangements. In 2008 RAE evaluation, Manchester University in Oxford University and University of Cambridge after the third was awarded the title of scientific research authority, is a glorious history of a world-class comprehensive university.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/8.png" alt="number 8" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/lseps.jpg" alt="lseps" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>London School of Economics and Political Science</h5>
+                                        <p>
+                                            The London School of Economics and Political Science, one of the largest in the University of London, is the only school to focus teaching and research on social, political and economic sciences. The London School of Economics and Political Science has been awarded the title of "World Leading Research University".
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/9.png" alt="number 9" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/bristol.jpg" alt="bristol" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Bristol</h5>
+                                        <p>
+                                            University of Bristol (University of Bristol) is located in the southwest England Avon Bristol City, Bristol International Airport, Bristol bus station, coach station, and convenient transportation. The school has a royal authority, teaching and research strength are very strong, enjoy the prestigious, is a veritable international university, is also the British university, second only to Oxford, Cambridge and the University of London, get the highest level of assessment of the university.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div id="3" class="tab-pane fade">
+                             <div class="row">
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/1.png" alt="number 1" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="images/anu.jpg" alt="anu" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Australian National University</h5>
+                                        <p>
+                                            ANU is a research-intensive university of global standing specialising in discovery and public policy. Our research priorities address the challenges facing Australia and the world.
+                                       <a href ="www.anu.edu.au">For more</a> 
+									   </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/2.png" alt="number 2" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/um.jpg" alt="um" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Melbourne</h5>
+                                        <p>
+                                            Established in 1853, the University of Melbourne is a public-spirited institution that makes distinctive contributions to society in research, learning and teaching and engagement. It's consistently ranked among the leading universities in the world, with international rankings of world universities placing it as number 1 in Australia and number 33 in the world (Times Higher Education World University Rankings 2015-2016).
+                                        <a href ="www.unimelb.edu.au/">For more</a>                                        
+									   </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/3.png" alt="number 3" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/su.jpg" alt="su" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Sydney</h5>
+                                        <p>
+                                            The University of Sydney (informally, USyd) is an Australian public research university in Sydney, Australia. Founded in 1850, it is Australia's first university and is regarded as one of the country's leading universities. The university comprises 16 faculties and schools, through which it offers bachelor, master and doctoral degrees. In 2011 it had 32,393 undergraduate and 16,627 graduate students.
+                                        <a href ="sydney.edu.au/">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/4.png" alt="number 4" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/nswu.jpg" alt="nswu" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of New South Wales</h5>
+                                        <p>
+                                            The University of New South Wales (UNSW; branded as UNSW Sydney[2]) is an Australian public research university located in the suburb of Kensington in Sydney. Established in 1949, it is regarded as one of the country's leading universities. 
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/5.png" alt="number 5" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/qu.jpg" alt="qu" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Queensland</h5>
+                                        <p>
+                                            The University of Queensland (UQ) is an Australian public research university primarily located in Queensland state capital city, Brisbane. UQ is the top ranked university in Australia for business and life sciences.[3][4][5] The main campus occupies much of the riverside inner suburb of St Lucia, southwest of the Brisbane central business district. Other UQ campuses and facilities are located throughout Queensland, the largest of which are the Gatton campus and the Herston medical school. UQ also has establishments overseas, such as the Brunei Clinical School and the UQ-Ochsner Clinical School in Louisiana, United States.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/6.png" alt="number 6" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/mu.jpg" alt="mu" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Monash University</h5>
+                                        <p>
+                                            Monash University is an Australian public research university based in Melbourne, Australia. Founded in 1958, it is the second oldest university in the State of Victoria. Monash is a member of Australia's Group of Eight, a coalition of Australia's eight leading research Universities,[6] a member of the ASAIHL, and is the only Australian member of the influential M8 Alliance of Academic Health Centers, Universities and National Academies. Monash is one of two Australian universities to be ranked in the Ecole des Mines de Paris (Mines ParisTech) ranking on the basis of the number of alumni listed among CEOs in the 500 largest worldwide companies.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/7.png" alt="number 7" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/wau.jpg" alt="wau" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Western Australia</h5>
+                                        <p>
+                                            The University of Western Australia (UWA) is a research-intensive university in Perth, Australia that was established by an act of the Western Australian Parliament in February 1911, and began teaching students for the first time in 1913. It is the oldest university in the state of Western Australia. It is colloquially known as a "sandstone university". It is also a member of the Group of Eight.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/8.png" alt="number 8" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/au.jpg" alt="au" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Adelaide</h5>
+                                        <p>
+                                            The University of Adelaide is a public university located in Adelaide, South Australia. Established in 1874, it is the third-oldest university in Australia. The University is associated with five Nobel laureates and 104 Rhodes scholars. It is a member of the Group of Eight and the Association of Commonwealth Universities. The University is also a member of the Sandstone universities, which mostly consist of Colonial-era Universities within Australia.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/9.png" alt="number 9" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="images/tsu.jpg" alt="tsu" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Technology Sydney</h5>
+                                        <p>
+                                            The University of Technology Sydney (UTS) is a public university in Sydney, Australia. The university was founded in its current form in 1988, although its origins trace back to the 1870s. It is part of the Australian Technology Network of universities.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <div id="4" class="tab-pane fade">
+                            <p>Location:XXXXXX<br>Date:XXXX-XX-XX</p>
+                        </div>
+                        
+                        <div id="5" class="tab-pane fade">
+                            <p>Location:XXXXXX<br>Date:XXXX-XX-XX</p>
+                        </div>
+                    </div>
+                </div>
+            </div></br></br><hr>
+    
+            <div id="America">
+                <h3 class="text-center">America Rankings</h3>
+                <div class="well">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#6">Overall ranking</a></li>
+                        <li><a data-toggle="tab" href="#7">Law ranking</a></li>
+                        <li><a data-toggle="tab" href="#8">Engineering ranking</a></li>
+                        <li><a data-toggle="tab" href="#9">Business ranking</a></li>
+                        <li><a data-toggle="tab" href="#10">Science ranking</a></li>
+                    </ul><br>
+
+                    <div class="tab-content">
+                        <div id="6" class="tab-pane fade in active">
+                            <div class="row">
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/1.png" alt="number 1" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/princeton.jpg" alt="princeton" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Princeton University</h5>
+                                        <p>
+                                            Princeton University ranked first in "2016 USNews American University Ranking" in the 1 name. Princeton University was founded in 1746, is a Ivy League private university. The 600-acre campus is located in a neighborhood of Princeton, 50 miles southwest of New York City. The main campus buildings are of the Grurean and Gothic styles, as well as modern buildings designed by IM Pei and Robert Venturi.
+                                        <a href =https://www.princeton.edu/main/>For more</a>      
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/2.png" alt="number 2" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/harvard.jpg" alt="harvard" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Harvard University</h5>
+                                        <p>
+                                            Harvard University ranked first in "2016 USNews American University Ranking" in the 2 names. Harvard University, the flagship of university education in the United States, the Ivy League representative, the Harvard Business School is the planet's best business school, Harvard University, all undergraduate education level is the world's top. And Yale University, Oxford University and Cambridge University and known as the best university on Earth, is the United States one of the most difficult to apply for the university.
+                                        <a href =http://www.harvard.edu/>For more</a>
+									   </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/3.png" alt="number 3" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/yale.jpg" alt="yale" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Yale University</h5>
+                                        <p>
+                                            Yale University in the "2016 USNews American University Ranking" in the third . Yale University was founded in 1701 and has always been one of the most acclaimed schools in the United States. In addition to diverse students, global vision and outstanding research achievements, Yale University also advocates promoting change. Many people believe that Yale University is mainly an undergraduate school, that is, Yale College.
+                                        <a href =https://www.yale.edu/>For more</a>
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/4.png" alt="number 4" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/columbia.jpg" alt="columbia" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Columbia University</h5>
+                                        <p>
+                                            Columbia University ranks fourth in the "2016 USNews American University Rankings" . Columbia University is located in the world's most prosperous city - New York City. Columbia University covers a number of academic fields, is a leader in the field of science; creative vision of the field of creativity; the new benchmark in the field of humanities and innovative ideas in the field of engineering. Columbia College and Columbia Institute of Engineering in the undergraduate students were 4100 and 1400, each student should learn our first-class core courses. 
+                                         <a href =http://www.columbia.edu/>For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/5.png" alt="number 4" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/stanford.jpg" alt="stanford" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Stanford University</h5>
+                                        <p>
+                                            Stanford University ranked fourth in the "2016 USNews American University Rankings" . Stanford University is recognized as a world famous university. In addition to the well-known professors to teach first-class knowledge, the school also has a very rich extra-curricular activities and participate in research, independent research and public service opportunities
+                                        <a href =http://www.stanford.edu>For more</a>
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/6.png" alt="number 4"width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/chicago.jpg" alt="chicago" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>The University of Chicago</h5>
+                                        <p>
+                                            University of Chicago in the "2016 USNews American University Rankings" in the fourth . Chicago University (University of Chicago, UChicago or Chicago) Advantages: - Has the nation's top economics. - the proportion of teachers and students 6: 1; in all undergraduate courses in about 77% of the following 20 classes, 50 or more only 5.7% of the big class. - The school is located in Chicago, the third largest city in the United States, to facilitate students' life, internship and employment.
+                                        <a href ='#'>For more</a>
+									   </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/7.png" alt="number 7" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/mit.jpg" alt="mit" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Massachusetts Institute of Technology</h5>
+                                        <p>
+                                            Massachusetts Institute of Technology Ranked No. 7 in the "2016 USNews American University Rankings" . The mission of the Massachusetts Institute of Technology is to advance the advancement of science, technology and other academic fields and to train students in the 21st century to best serve the country and the world. The scientific and technological challenges of our time are on the rise, and we have to face the daunting task of quantitative analysis and complex, integrated problems. 
+                                        <a href =http://www.harvard.edu>For more</a>
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/8.png" alt="number 8"width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/duke.jpg" alt="duke" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Duke University</h5>
+                                        <p>
+                                            Duke University in the "2016 USNews American University Rankings" ranked eighth . Duke University is an international brand-name research institutions, the school is located in Durham, North Carolina, covers an area of ??nearly 9000 acres. More than 6,000 undergraduate students, from biomedical engineering to Slav and Eurasian studies, including more than 40 disciplines. The school has excellent sports associations, innovative research facilities, and is committed to applying knowledge to improve social conditions.
+                                       <a href ='#'>For more</a>
+									   </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/9.png" alt="number 9" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="images/pe.jpg" alt="pe" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Pennsylvania</h5>
+                                        <p>
+                                            University of Pennsylvania ranks ninth in the "2016 USNews American University Rankings" . University of Pennsylvania is a private university founded in 1740. It offers a wide range of courses for students in the fields of science, art, engineering and applied technology. One of the famous Wharton School of business elite to cultivate famous. And its 260-acre campus is only 2 kilometers from downtown Philadelphia, enough to see the school's close ties with the community.
+                                        <a href ='#'>For more</a>                                       
+									   </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="7" class="tab-pane fade">
+                            <p>Location:XXXXXX<br>Date:XXXX-XX-XX</p>
+                        </div>
+                        <div id="8" class="tab-pane fade">
+                            <p>Location:XXXXXX<br>Date:XXXX-XX-XX</p>
+                        </div>
+                        <div id="9" class="tab-pane fade">
+                            <p>Location:XXXXXX<br>Date:XXXX-XX-XX</p>
+                        </div>
+                        <div id="10" class="tab-pane fade">
+                            <p>Location:XXXXXX<br>Date:XXXX-XX-XX</p>
+                        </div>
+                    </div>
+                </div>
+            </div></br></br><hr>
+    
+            <div id="England">
+                <h3 class="text-center">England Rankings</h3>
+                <div class="well">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#11">Overall ranking</a></li>
+                        <li><a data-toggle="tab" href="#12">Law ranking</a></li>
+                        <li><a data-toggle="tab" href="#13">Engineering ranking</a></li>
+                        <li><a data-toggle="tab" href="#14">Business ranking</a></li>
+                        <li><a data-toggle="tab" href="#15">Science ranking</a></li>
+                    </ul><br>
+
+                    <div class="tab-content">
+                        <div id="11" class="tab-pane fade in active">
+                            <div class="row">
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/1.png" alt="number 1" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/cambridge.jpg" alt="cambridge" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Cambridge</h5>
+                                        <p>
+                                            The University of Cambridge is one of the top ten universities in the world. It is famous for its outstanding educational quality. Many famous scientists, writers and politicians in Britain come from this university. 2011 US News and World Report and higher education research institutions QS jointly published US NEWS-QS World University Rankings ranked first in the world. Cambridge is a city in the east of England, 50 kilometers north of London. 
+                                         <a href =https://www.cam.ac.uk/>For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/2.png" alt="number 2"width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/oxford.jpg" alt="oxford" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Oxford university</h5>
+                                        <p>
+                                            Oxford University (University of Oxford) is the English-speaking world's oldest university, a "genius and the cradle of the prime minister," said the name. Is one of Britain's most prestigious institutions of higher learning, Oxford University is famous in the world, its reputation has been growing, one third from the British mainland students. 93% of the students expressed satisfaction with their classroom quality. The school's teachers are from all over the world's highly academic authority. 
+                                        <a href =http://www.ox.ac.uk/>For more</a>   
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img   src="images/3.png" alt="number 3" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/london.jpg" alt="london" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University College London</h5>
+                                        <p>
+                                            University College London (University College London), the British Guard ranked sixth. Is a comprehensive university established in 1826, the United Kingdom following Oxford, Cambridge after the third old university. London University College and Oxford University, Cambridge University, Imperial College of Technology, London School of Economics and Political Science, together known as G5 Super Elite University. University of London College of the British government to enjoy the most budget, is a member of the Golden Triangle.
+                                        <a href ='#'>For more</a>   
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/4.png" alt="number 4" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/imperial.jpg" alt="imperial" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Imperial College of Technology</h5>
+                                        
+                                        <p>
+                                            Imperial College London The main campus of Imperial College London is located in the heart of London - South Kensington. In 1996, the UK Higher Education Fund Committee's research assessment, mathematics, computer science, chemical engineering, civil engineering, mechanical engineering And other 15 professional have scored five points, teachers are extremely strong, with excellent teaching ability.
+                                        <a href ="#">For more</a>   
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/5.png" alt="number 5" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/king.jpg" alt="king" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>King's College London</h5>
+                                        
+                                        <p>
+                                            King's College London is one of the world's top 30 universities in the heart of London and the fourth oldest school in the UK. In its 2008 study of UK universities, 23 departments were among the top universities in the UK , King's College London in humanities, law, and social sciences, including international affairs has a very outstanding achievement. Ranked 31 in the Guardian.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/6.png" alt="number 6" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/edinburgh.jpg" alt="edinburgh" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Edinburgh</h5>
+                                        
+                                        <p>
+                                            The University of Edinburgh is located in the heart of Edinburgh, the capital of Scotland, the fourth in Scotland and the sixth university in the English world. Ranked 15th in the British Guardian, RAE was awarded in 2008 by high-quality experimental research and high-quality teaching institutions, ranking one of the top 20 in the world. 
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/7.png" alt="number 7" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/manchester.jpg" alt="manchester" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Manchester</h5>
+                                        <p>
+                                            The University of Manchester is a compact city campus, within walking distance to Oxford Road in the city center. The university has a lot of flexible opportunities to offer to students, including study abroad and industrial arrangements. In 2008 RAE evaluation, Manchester University in Oxford University and University of Cambridge after the third was awarded the title of scientific research authority, is a glorious history of a world-class comprehensive university.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/8.png" alt="number 8" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/lseps.jpg" alt="lseps" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>London School of Economics and Political Science</h5>
+                                        <p>
+                                            The London School of Economics and Political Science, one of the largest in the University of London, is the only school to focus teaching and research on social, political and economic sciences. The London School of Economics and Political Science has been awarded the title of "World Leading Research University".
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/9.png" alt="number 9" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/bristol.jpg" alt="bristol" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Bristol</h5>
+                                        <p>
+                                            University of Bristol (University of Bristol) is located in the southwest England Avon Bristol City, Bristol International Airport, Bristol bus station, coach station, and convenient transportation. The school has a royal authority, teaching and research strength are very strong, enjoy the prestigious, is a veritable international university, is also the British university, second only to Oxford, Cambridge and the University of London, get the highest level of assessment of the university.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="12" class="tab-pane fade">
+                        <p>Location:XXXXXX<br>Date:XXXX-XX-XX</p>
+                        </div>
+                        <div id="13" class="tab-pane fade">
+                        <p>Location:XXXXXX<br>Date:XXXX-XX-XX</p>
+                        </div>
+                        <div id="14" class="tab-pane fade">
+                        <p>Location:XXXXXX<br>Date:XXXX-XX-XX</p>
+                        </div>
+                        <div id="15" class="tab-pane fade">
+                        <p>Location:XXXXXX<br>Date:XXXX-XX-XX</p>
+                        </div>
+                    </div>
+                </div>
+            </div></br></br><hr>
+    
+            <div id="Australia">
+                <h3 class="text-center">Australia Rankings</h3>
+                <div class="well">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#16">Overall ranking</a></li>
+                        <li><a data-toggle="tab" href="#17">Law ranking</a></li>
+                        <li><a data-toggle="tab" href="#18">Engineering ranking</a></li>
+                        <li><a data-toggle="tab" href="#19">Business ranking</a></li>
+                        <li><a data-toggle="tab" href="#20">Science ranking</a></li>
+                    </ul><br>
+
+                    <div class="tab-content">
+                        <div id="16" class="tab-pane fade in active">
+                            <div class="row">
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/1.png" alt="number 1" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="images/anu.jpg" alt="anu" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Australian National University</h5>
+                                        <p>
+                                            ANU is a research-intensive university of global standing specialising in discovery and public policy. Our research priorities address the challenges facing Australia and the world.
+                                       <a href ="www.anu.edu.au">For more</a> 
+									   </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/2.png" alt="number 2" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/um.jpg" alt="um" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Melbourne</h5>
+                                        <p>
+                                            Established in 1853, the University of Melbourne is a public-spirited institution that makes distinctive contributions to society in research, learning and teaching and engagement. It's consistently ranked among the leading universities in the world, with international rankings of world universities placing it as number 1 in Australia and number 33 in the world (Times Higher Education World University Rankings 2015-2016).
+                                        <a href ="www.unimelb.edu.au/">For more</a>                                        
+									   </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/3.png" alt="number 3" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/su.jpg" alt="su" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Sydney</h5>
+                                        <p>
+                                            The University of Sydney (informally, USyd) is an Australian public research university in Sydney, Australia. Founded in 1850, it is Australia's first university and is regarded as one of the country's leading universities. The university comprises 16 faculties and schools, through which it offers bachelor, master and doctoral degrees. In 2011 it had 32,393 undergraduate and 16,627 graduate students.
+                                        <a href ="sydney.edu.au/">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/4.png" alt="number 4" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/nswu.jpg" alt="nswu" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of New South Wales</h5>
+                                        <p>
+                                            The University of New South Wales (UNSW; branded as UNSW Sydney[2]) is an Australian public research university located in the suburb of Kensington in Sydney. Established in 1949, it is regarded as one of the country's leading universities. 
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/5.png" alt="number 5" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/qu.jpg" alt="qu" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Queensland</h5>
+                                        <p>
+                                            The University of Queensland (UQ) is an Australian public research university primarily located in Queensland state capital city, Brisbane. UQ is the top ranked university in Australia for business and life sciences.[3][4][5] The main campus occupies much of the riverside inner suburb of St Lucia, southwest of the Brisbane central business district. Other UQ campuses and facilities are located throughout Queensland, the largest of which are the Gatton campus and the Herston medical school. UQ also has establishments overseas, such as the Brunei Clinical School and the UQ-Ochsner Clinical School in Louisiana, United States.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/6.png" alt="number 6" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/mu.jpg" alt="mu" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Monash University</h5>
+                                        <p>
+                                            Monash University is an Australian public research university based in Melbourne, Australia. Founded in 1958, it is the second oldest university in the State of Victoria. Monash is a member of Australia's Group of Eight, a coalition of Australia's eight leading research Universities,[6] a member of the ASAIHL, and is the only Australian member of the influential M8 Alliance of Academic Health Centers, Universities and National Academies. Monash is one of two Australian universities to be ranked in the Ecole des Mines de Paris (Mines ParisTech) ranking on the basis of the number of alumni listed among CEOs in the 500 largest worldwide companies.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/7.png" alt="number 7" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/wau.jpg" alt="wau" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Western Australia</h5>
+                                        <p>
+                                            The University of Western Australia (UWA) is a research-intensive university in Perth, Australia that was established by an act of the Western Australian Parliament in February 1911, and began teaching students for the first time in 1913. It is the oldest university in the state of Western Australia. It is colloquially known as a "sandstone university". It is also a member of the Group of Eight.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/8.png" alt="number 8" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/au.jpg" alt="au" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Adelaide</h5>
+                                        <p>
+                                            The University of Adelaide is a public university located in Adelaide, South Australia. Established in 1874, it is the third-oldest university in Australia. The University is associated with five Nobel laureates and 104 Rhodes scholars. It is a member of the Group of Eight and the Association of Commonwealth Universities. The University is also a member of the Sandstone universities, which mostly consist of Colonial-era Universities within Australia.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/9.png" alt="number 9" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="images/tsu.jpg" alt="tsu" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Technology Sydney</h5>
+                                        <p>
+                                            The University of Technology Sydney (UTS) is a public university in Sydney, Australia. The university was founded in its current form in 1988, although its origins trace back to the 1870s. It is part of the Australian Technology Network of universities.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="17" class="tab-pane fade">
+                        <p>Location:XXXXXX<br>Date:XXXX-XX-XX</p>
+                        </div>
+                        <div id="18" class="tab-pane fade">
+                        <p>Location:XXXXXX<br>Date:XXXX-XX-XX</p>
+                        </div>
+                        <div id="19" class="tab-pane fade">
+                        <p>Location:XXXXXX<br>Date:XXXX-XX-XX</p>
+                        </div>
+                        <div id="20" class="tab-pane fade">
+                        <p>Location:XXXXXX<br>Date:XXXX-XX-XX</p>
+                        </div>
+                    </div>
+                </div>
+            </div></br></br><hr>
+    
+            <div id="Users">
+                <h3 class="text-center">Users' Rankings</h3>
+                <div class="well">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#21">Overall ranking</a></li>
+                        <li><a data-toggle="tab" href="#22">England ranking</a></li>
+                        <li><a data-toggle="tab" href="#23">American ranking</a></li>
+                        <li><a data-toggle="tab" href="#24">Australia ranking</a></li>
+                    </ul><br>
+
+                  
+
+
+				  <div class="tab-content">
+                        <div id="21" class="tab-pane fade in active">
+                            <div class="row"> </br>
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/1.png" alt="number 1" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="images/harvard.jpg" alt="harvard" height="100" width="100"></figure>
+                                        <div class="floatRight">
+                                            <h5>Harvard University</h5> <span>your rating:</span> <input class="rated" type="text" value=""/></br>
+                                            <p><input id="rate1" value="4.9"  type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" > 
+                                                Harvard University ranked first in "2017 USNews World University Ranking" in the 1 name. Harvard University, the flagship of university education in the United States, the Ivy League representative, the Harvard Business School is the planet's best business school, Harvard University, all undergraduate education level is the world's top. And Yale University, Oxford University and Cambridge University and known as the best university on Earth, is the United States one of the most difficult to apply for the university. <a href =http://www.harvard.edu/>For more</a>
+                                            </p>
+                                        </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/2.png" alt="number 2" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/mit.jpg" alt="mit" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Massachusetts Institute of Technology</h5> <span>your rating:</span> <input class="rated" type="text" value=""/></br>
+                                        <p><input id="input-21e" value="4.8" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            Massachusetts Institute of Technology in the "2017 USNews World University Rankings" in the first two . The mission of the Massachusetts Institute of Technology is to advance the advancement of science, technology and other academic fields and to train students in the 21st century to best serve the country and the world. The scientific and technological challenges of our time are on the rise, and we have to face the daunting task of quantitative analysis and complex, integrated problems.  <a href =http://www.harvard.edu>For more</a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/3.png" alt="number 3" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/stanford.jpg" alt="stanford" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Stanford University</h5> <span>your rating:</span> <input class="rated" type="text" value=""/></br>
+                                        <p><input id="input-21e" value="4.76" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            Stanford University ranked No. 3 in the "2017 USNews World University Rankings" . Stanford University is recognized as a world famous university. In addition to the well-known professors to teach first-class knowledge, the school also has a very rich extra-curricular activities and participate in research, independent research and public service opportunities. The mission of the school is "to enable students to achieve personal achievement, become useful material" and "through the impact of human and civilization, for the public welfare.
+                                        <a href =http://www.stanford.edu>For more</a>
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/4.png" alt="number 4" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/berkeley.jpg" alt="berkeley" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of California-Berkeley</h5> <span>your rating:</span> <input class="rated" type="text" value=""/></br>
+                                        <p><input id="input-21e" value="4.7" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            University of California at Berkeley in "2017 USNews World University Rankings" in the fourth . - University of California, Berkeley is a world-renowned university, in the US News issued by the civil engineering, environmental engineering, ecology, chemistry, computer science and related professional rankings are ranked first in the United States. -US News ranked the school 21th in the nation and the top 10 in 130 professional ranks.
+                                         <a href =http://www.berkeley.edu>For more</a>
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/5.png" alt="number 5" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/cit.jpg" alt="cit" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>California Institute of Technology</h5> <span>your rating:</span> <input class="rated" type="text" value=""/></br>
+                                        <p><input id="input-21e" value="4.6" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            California Institute of Technology in the "2017 USNews World University Rankings" in the first five . California Institute of Technology in Pasadena, California, it is generally known as the "California Institute of Technology." California Institute of Technology is a private elite research institute, the school has a total of 6 teaching division, providing 24 professional and 6 minor professional, engineering and technical courses which prestigious.
+                                            <a href =http://www.caltech.edu/>For more</a>                                      
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/6.png" alt="number 6" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="images/oxford.jpg" alt="oxford" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Oxford</h5> <span>your rating:</span> <input class="rated" type="text" value=""/></br>
+                                        <p><input id="input-21e" value="4.5" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            Oxford University (University of Oxford) is the English-speaking world's oldest university, a "genius and the cradle of the prime minister," said the name. Is one of Britain's most prestigious institutions of higher learning, Oxford University is famous in the world, its reputation has been growing, one third from the British mainland students. 93% of the students expressed satisfaction with their classroom quality. The school's teachers are from all over the world's highly academic authority.
+                                        <a href =http://www.ox.ac.uk/>For more</a>   
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/7.png" alt="number 7" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="images/cambridge.jpg" alt="cambridge" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Cambridge</h5> <span>your rating:</span> <input class="rated" type="text" value=""/></br>
+                                        <p><input id="input-21e" value="4.4" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            The University of Cambridge is one of the top ten universities in the world. It is famous for its outstanding educational quality. Many famous scientists, writers and politicians in Britain come from this university. 2011 US News and World Report and higher education research institutions QS jointly published US NEWS-QS World University Rankings ranked first in the world. Cambridge is a city in the east of England, 50 kilometers north of London.
+                                        <a href =https://www.cam.ac.uk/>For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/8.png" alt="number 8" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/princeton.jpg" alt="princeton" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Princeton University</h5> <span>your rating:</span> <input class="rated" type="text" value=""/></br>
+                                        <p><input id="input-21e" value="4.3" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            Princeton University in the "2017 USNews World University Rankings" ranked eighth . Princeton University was founded in 1746, is a Ivy League private university. The 600-acre campus is located in a neighborhood of Princeton, 50 miles southwest of New York City. The main campus buildings are of the Grurean and Gothic styles, as well as modern buildings designed by IM Pei and Robert Venturi.
+                                          <a href =https://www.princeton.edu/main/>For more</a>                                        
+									   </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/9.png" alt="number 9" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/columbia.jpg" alt="columbia" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Columbia University</h5> <span>your rating:</span> <input class="rated" type="text" value=""/></br>
+                                        <p><input id="input-21e" value="4.2" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            Columbia University in the "2017 USNews World University Rankings" ranked ninth . Columbia University is located in the world's most prosperous city - New York City. Columbia University covers a number of academic fields, is a leader in the field of science; creative vision of the field of creativity; the new benchmark in the field of humanities and innovative ideas in the field of engineering.
+                                        <a href =http://www.columbia.edu/>For more</a> 
+										</br>
+										<h5><b>Give your own score:</b></h5>
+										 <select id="globalselect">
+                                   <option selected="selected">Select a Univsersity</option>
+								   <option value="1">Harvard</option>
+                                   <option value="2">MIT</option>
+                                   <option value="3">Stanford</option>
+								   <option value="4">UCB</option>
+								   <option value="5">CIT</option>
+                                   <option value="6">Oxford</option>
+								   <option value="7">Cambridge</option>
+								   <option value="8">Princeton</option>
+								   <option value="9">Columbia</option>
+                                          </select>  <input id="globalrate"  type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+										  <span><b>Feel free to leave any comment:</b></span></br>
+										  <textarea rows="4" cols="30">
+                                          
+                                          </textarea>
+					               <button type="button" id="btn1">submit</button>
+										</p>
+                                    </div>
+                                </div>
+								
+               
+										
+                            </div>
+                        </div>
+                        
+						
+						
+						
+						
+						<div id="22" class="tab-pane fade">
+                             <div class="row">
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/1.png" alt="number 1" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/cambridge.jpg" alt="cambridge" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Cambridge</h5>
+                                        <p><input id="input-21e" value="4.8" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            The University of Cambridge is one of the top ten universities in the world. It is famous for its outstanding educational quality. Many famous scientists, writers and politicians in Britain come from this university. 2011 US News and World Report and higher education research institutions QS jointly published US NEWS-QS World University Rankings ranked first in the world. Cambridge is a city in the east of England, 50 kilometers north of London. 
+                                         <a href =https://www.cam.ac.uk/>For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/2.png" alt="number 2"width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/oxford.jpg" alt="oxford" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Oxford university</h5>
+                                        <p><input id="input-21e" value="4.7" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            Oxford University (University of Oxford) is the English-speaking world's oldest university, a "genius and the cradle of the prime minister," said the name. Is one of Britain's most prestigious institutions of higher learning, Oxford University is famous in the world, its reputation has been growing, one third from the British mainland students. 93% of the students expressed satisfaction with their classroom quality. The school's teachers are from all over the world's highly academic authority. 
+                                        <a href =http://www.ox.ac.uk/>For more</a>   
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img   src="images/3.png" alt="number 3" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/london.jpg" alt="london" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University College London</h5>
+                                        <p><input id="input-21e" value="4.6" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            University College London (University College London), the British Guard ranked sixth. Is a comprehensive university established in 1826, the United Kingdom following Oxford, Cambridge after the third old university. London University College and Oxford University, Cambridge University, Imperial College of Technology, London School of Economics and Political Science, together known as G5 Super Elite University. University of London College of the British government to enjoy the most budget, is a member of the Golden Triangle.
+                                        <a href ='#'>For more</a>   
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/4.png" alt="number 4" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/imperial.jpg" alt="imperial" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Imperial College of Technology</h5>
+                                        
+                                        <p><input id="input-21e" value="4.5" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            Imperial College London The main campus of Imperial College London is located in the heart of London - South Kensington. In 1996, the UK Higher Education Fund Committee's research assessment, mathematics, computer science, chemical engineering, civil engineering, mechanical engineering And other 15 professional have scored five points, teachers are extremely strong, with excellent teaching ability.
+                                        <a href ="#">For more</a>   
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/5.png" alt="number 5" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/king.jpg" alt="king" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>King's College London</h5>
+                                        
+                                        <p><input id="input-21e" value="4.4" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            King's College London is one of the world's top 30 universities in the heart of London and the fourth oldest school in the UK. In its 2008 study of UK universities, 23 departments were among the top universities in the UK , King's College London in humanities, law, and social sciences, including international affairs has a very outstanding achievement. Ranked 31 in the Guardian.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/6.png" alt="number 6" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/edinburgh.jpg" alt="edinburgh" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Edinburgh</h5>
+                                        
+                                        <p><input id="input-21e" value="4.3" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            The University of Edinburgh is located in the heart of Edinburgh, the capital of Scotland, the fourth in Scotland and the sixth university in the English world. Ranked 15th in the British Guardian, RAE was awarded in 2008 by high-quality experimental research and high-quality teaching institutions, ranking one of the top 20 in the world. 
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/7.png" alt="number 7" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/manchester.jpg" alt="manchester" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Manchester</h5>
+                                        <p><input id="input-21e" value="4.2" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            The University of Manchester is a compact city campus, within walking distance to Oxford Road in the city center. The university has a lot of flexible opportunities to offer to students, including study abroad and industrial arrangements. In 2008 RAE evaluation, Manchester University in Oxford University and University of Cambridge after the third was awarded the title of scientific research authority, is a glorious history of a world-class comprehensive university.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/8.png" alt="number 8" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/lseps.jpg" alt="lseps" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>London School of Economics and Political Science</h5>
+                                        <p><input id="input-21e" value="4.1" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            The London School of Economics and Political Science, one of the largest in the University of London, is the only school to focus teaching and research on social, political and economic sciences. The London School of Economics and Political Science has been awarded the title of "World Leading Research University".
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/9.png" alt="number 9" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/bristol.jpg" alt="bristol" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Bristol</h5>
+                                        <p><input id="input-21e" value="4.0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            University of Bristol (University of Bristol) is located in the southwest England Avon Bristol City, Bristol International Airport, Bristol bus station, coach station, and convenient transportation. The school has a royal authority, teaching and research strength are very strong, enjoy the prestigious, is a veritable international university, is also the British university, second only to Oxford, Cambridge and the University of London, get the highest level of assessment of the university.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+
+
+
+
+					   <div id="23" class="tab-pane fade">
+                          <div class="row">
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/1.png" alt="number 1" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/princeton.jpg" alt="princeton" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Princeton University</h5>
+                                        <p><input id="input-21e" value="4.9" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            Princeton University ranked first in "2016 USNews American University Ranking" in the 1 name. Princeton University was founded in 1746, is a Ivy League private university. The 600-acre campus is located in a neighborhood of Princeton, 50 miles southwest of New York City. The main campus buildings are of the Grurean and Gothic styles, as well as modern buildings designed by IM Pei and Robert Venturi.
+                                        <a href =https://www.princeton.edu/main/>For more</a>      
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/2.png" alt="number 2" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/harvard.jpg" alt="harvard" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Harvard University</h5>
+                                        <p><input id="input-21e" value="4.8" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            Harvard University ranked first in "2016 USNews American University Ranking" in the 2 names. Harvard University, the flagship of university education in the United States, the Ivy League representative, the Harvard Business School is the planet's best business school, Harvard University, all undergraduate education level is the world's top. And Yale University, Oxford University and Cambridge University and known as the best university on Earth, is the United States one of the most difficult to apply for the university.
+                                        <a href =http://www.harvard.edu/>For more</a>
+									   </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/3.png" alt="number 3" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/yale.jpg" alt="yale" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Yale University</h5>
+                                        <p><input id="input-21e" value="4.7" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            Yale University in the "2016 USNews American University Ranking" in the third . Yale University was founded in 1701 and has always been one of the most acclaimed schools in the United States. In addition to diverse students, global vision and outstanding research achievements, Yale University also advocates promoting change. Many people believe that Yale University is mainly an undergraduate school, that is, Yale College.
+                                        <a href =https://www.yale.edu/>For more</a>
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/4.png" alt="number 4" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/columbia.jpg" alt="columbia" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Columbia University</h5>
+                                        <p><input id="input-21e" value="4.6" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            Columbia University ranks fourth in the "2016 USNews American University Rankings" . Columbia University is located in the world's most prosperous city - New York City. Columbia University covers a number of academic fields, is a leader in the field of science; creative vision of the field of creativity; the new benchmark in the field of humanities and innovative ideas in the field of engineering. Columbia College and Columbia Institute of Engineering in the undergraduate students were 4100 and 1400, each student should learn our first-class core courses. 
+                                         <a href =http://www.columbia.edu/>For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/5.png" alt="number 4" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/stanford.jpg" alt="stanford" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Stanford University</h5>
+                                        <p><input id="input-21e" value="4.5" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            Stanford University ranked fourth in the "2016 USNews American University Rankings" . Stanford University is recognized as a world famous university. In addition to the well-known professors to teach first-class knowledge, the school also has a very rich extra-curricular activities and participate in research, independent research and public service opportunities
+                                        <a href =http://www.stanford.edu>For more</a>
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/6.png" alt="number 4"width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/chicago.jpg" alt="chicago" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>The University of Chicago</h5>
+                                        <p><input id="input-21e" value="4.4" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            University of Chicago in the "2016 USNews American University Rankings" in the fourth . Chicago University (University of Chicago, UChicago or Chicago) Advantages: - Has the nation's top economics. - the proportion of teachers and students 6: 1; in all undergraduate courses in about 77% of the following 20 classes, 50 or more only 5.7% of the big class. - The school is located in Chicago, the third largest city in the United States, to facilitate students' life, internship and employment.
+                                        <a href ='#'>For more</a>
+									   </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/7.png" alt="number 7" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/mit.jpg" alt="mit" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Massachusetts Institute of Technology</h5>
+                                        <p><input id="input-21e" value="4.3" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            Massachusetts Institute of Technology Ranked No. 7 in the "2016 USNews American University Rankings" . The mission of the Massachusetts Institute of Technology is to advance the advancement of science, technology and other academic fields and to train students in the 21st century to best serve the country and the world. The scientific and technological challenges of our time are on the rise, and we have to face the daunting task of quantitative analysis and complex, integrated problems. 
+                                        <a href =http://www.harvard.edu>For more</a>
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/8.png" alt="number 8"width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/duke.jpg" alt="duke" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Duke University</h5>
+                                        <p><input id="input-21e" value="4.2" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            Duke University in the "2016 USNews American University Rankings" ranked eighth . Duke University is an international brand-name research institutions, the school is located in Durham, North Carolina, covers an area of ??nearly 9000 acres. More than 6,000 undergraduate students, from biomedical engineering to Slav and Eurasian studies, including more than 40 disciplines. The school has excellent sports associations, innovative research facilities, and is committed to applying knowledge to improve social conditions.
+                                       <a href ='#'>For more</a>
+									   </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/9.png" alt="number 9" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure><input id="input-21e" value="4.1" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                        <img class="float" src="images/pe.jpg" alt="pe" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Pennsylvania</h5>
+                                        <p><input id="input-21e" value="3.9" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            University of Pennsylvania ranks ninth in the "2016 USNews American University Rankings" . University of Pennsylvania is a private university founded in 1740. It offers a wide range of courses for students in the fields of science, art, engineering and applied technology. One of the famous Wharton School of business elite to cultivate famous. And its 260-acre campus is only 2 kilometers from downtown Philadelphia, enough to see the school's close ties with the community.
+                                        <a href ='#'>For more</a>                                       
+									   </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                       
+
+
+
+
+
+
+
+					   <div id="24" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/1.png" alt="number 1" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="images/anu.jpg" alt="anu" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Australian National University</h5>
+                                        <p><input id="input-21e" value="4.8" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            ANU is a research-intensive university of global standing specialising in discovery and public policy. Our research priorities address the challenges facing Australia and the world.
+                                       <a href ="www.anu.edu.au">For more</a> 
+									   </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/2.png" alt="number 2" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/um.jpg" alt="um" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Melbourne</h5>
+                                        <p><input id="input-21e" value="4.7" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            Established in 1853, the University of Melbourne is a public-spirited institution that makes distinctive contributions to society in research, learning and teaching and engagement. It's consistently ranked among the leading universities in the world, with international rankings of world universities placing it as number 1 in Australia and number 33 in the world (Times Higher Education World University Rankings 2015-2016).
+                                        <a href ="www.unimelb.edu.au/">For more</a>                                        
+									   </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/3.png" alt="number 3" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/su.jpg" alt="su" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Sydney</h5>
+                                        <p><input id="input-21e" value="4.6" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            The University of Sydney (informally, USyd) is an Australian public research university in Sydney, Australia. Founded in 1850, it is Australia's first university and is regarded as one of the country's leading universities. The university comprises 16 faculties and schools, through which it offers bachelor, master and doctoral degrees. In 2011 it had 32,393 undergraduate and 16,627 graduate students.
+                                        <a href ="sydney.edu.au/">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/4.png" alt="number 4" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/nswu.jpg" alt="nswu" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of New South Wales</h5>
+                                        <p><input id="input-21e" value="4.5" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            The University of New South Wales (UNSW; branded as UNSW Sydney[2]) is an Australian public research university located in the suburb of Kensington in Sydney. Established in 1949, it is regarded as one of the country's leading universities. 
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img  src="images/5.png" alt="number 5" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/qu.jpg" alt="qu" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Queensland</h5>
+                                        <p><input id="input-21e" value="4.4" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            The University of Queensland (UQ) is an Australian public research university primarily located in Queensland state capital city, Brisbane. UQ is the top ranked university in Australia for business and life sciences.[3][4][5] The main campus occupies much of the riverside inner suburb of St Lucia, southwest of the Brisbane central business district. Other UQ campuses and facilities are located throughout Queensland, the largest of which are the Gatton campus and the Herston medical school. UQ also has establishments overseas, such as the Brunei Clinical School and the UQ-Ochsner Clinical School in Louisiana, United States.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/6.png" alt="number 6" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/mu.jpg" alt="mu" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>Monash University</h5>
+                                        <p><input id="input-21e" value="4.3" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            Monash University is an Australian public research university based in Melbourne, Australia. Founded in 1958, it is the second oldest university in the State of Victoria. Monash is a member of Australia's Group of Eight, a coalition of Australia's eight leading research Universities,[6] a member of the ASAIHL, and is the only Australian member of the influential M8 Alliance of Academic Health Centers, Universities and National Academies. Monash is one of two Australian universities to be ranked in the Ecole des Mines de Paris (Mines ParisTech) ranking on the basis of the number of alumni listed among CEOs in the 500 largest worldwide companies.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/7.png" alt="number 7" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/wau.jpg" alt="wau" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Western Australia</h5>
+                                        <p><input id="input-21e" value="4.2" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            The University of Western Australia (UWA) is a research-intensive university in Perth, Australia that was established by an act of the Western Australian Parliament in February 1911, and began teaching students for the first time in 1913. It is the oldest university in the state of Western Australia. It is colloquially known as a "sandstone university". It is also a member of the Group of Eight.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/8.png" alt="number 8" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="Images/au.jpg" alt="au" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Adelaide</h5>
+                                        <p><input id="input-21e" value="4.1" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            The University of Adelaide is a public university located in Adelaide, South Australia. Established in 1874, it is the third-oldest university in Australia. The University is associated with five Nobel laureates and 104 Rhodes scholars. It is a member of the Group of Eight and the Association of Commonwealth Universities. The University is also a member of the Sandstone universities, which mostly consist of Colonial-era Universities within Australia.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <img src="images/9.png" alt="number 9" width="80" height="80">
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-8">
+                                    <figure>
+                                        <img class="float" src="images/tsu.jpg" alt="tsu" height="100" width="100">
+                                    </figure>
+                                    <div class="floatRight">
+                                        <h5>University of Technology Sydney</h5>
+                                        <p><input id="input-21e" value="4.0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" >
+                                            The University of Technology Sydney (UTS) is a public university in Sydney, Australia. The university was founded in its current form in 1988, although its origins trace back to the 1870s. It is part of the Australian Technology Network of universities.
+                                        <a href ="#">For more</a> 
+										</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div></br></br><hr>  
+        </div>
+
+    </body>
+
+    <footer class="text-center"> 
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>ABOUT US</h4>
+                <P style="text-align:left; color:#437772">Our purpose is to help everyone who want to study abroad! Contant us now!</P>
+                
+                <div class="contact-info">
+                    <ul>
+                        <li><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Huntington Avenue, Boston, MA, USA </li>
+                        <li><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;&nbsp;+1(800)-129-9003</li>
+                        <li><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;study@abroad.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+
+            <div class="col-md-4">
+                <h4>PHOTO GALLERY</h4>
+                <ul class="sidebar-gallery">
+                    <li><a href="#"><img src="images/gallery1.png" alt="gallery1" /></a></li>
+                    <li><a href="#"><img src="images/gallery2.png" alt="gallery2" /></a></li>
+                    <li><a href="#"><img src="images/gallery3.png" alt="gallery3" /></a></li>
+                    <li><a href="#"><img src="images/gallery4.png" alt="gallery4" /></a></li>
+                    <li><a href="#"><img src="images/gallery5.png" alt="gallery5" /></a></li>
+                    <li><a href="#"><img src="images/gallery6.png" alt="gallery6" /></a></li>					
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h4>NEWSLETTER REGISTRATION</h4>
+                <p style="text-align: left; color:#437772">Subscribe today to receive the latest news via email. 
+                You may unsubscribe from this service at any time.</p>
+                <form class="form-inline">
+                    <div class="form-group">		
+                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter your Email...">
+                    </div>
+                    <button type="submit" class="btn btn-default">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <p>&copy;StudyAbroad</p>    
+        <nav class="socialmediaicons">
+            <p id="icons" class="socialmediaicons"></p>
+	    </nav>
+    </footer>
+</html>

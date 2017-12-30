@@ -1,0 +1,60 @@
+.news-main,.news-sidebar {
+	display: inline}
+    
+    .news-main {
+	float: left;
+	width: 690px}
+
+    .news-main .time-right {
+	float: right;
+	display: inline-block;
+	height: 20px;
+	overflow: hidden
+}
+
+.news-main .time-right a {
+	margin-left: 10px
+}
+
+
+
+    .news-sidebar {
+    float: right;
+	width: 270px
+}
+.hot-news {
+	margin-bottom: 20px
+}
+
+.hot-news .hd {
+	height: 30px
+}
+
+.hot-news .hd h2 {
+	position: relative;
+	font-family: "Microsoft Yahei";
+	font-size: 18px;
+	font-weight: 400;
+	color: #1a2939
+}
+
+.hot-news .list li {
+	position: relative;
+	padding: 3px 0 3px 25px;
+	line-height: 20px;
+	font-size: 12px;
+    list-style-type:none
+}
+
+.hot-news .list .number {
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 0;
+	font-style: italic;
+	font-weight: 700
+}
+
+.hot-news .list .number-1,.hot-news .list .number-2,.hot-news .list .number-3 {
+	color: #ad0007
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Study Abroad</title>  
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <link href="main.css" rel="stylesheet">
+        <script src="script.js"></script>
+
+        <script src = "controller.js"></script>
+    </head>
+
+
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50"  > 
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="nav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbra">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#myPage">Study Abroad</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbra">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="leaderboard.html">Leaderboard</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="course.html">Courses
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="course.html">Course</a></li>
+                                <li><a href="gre.html">GRE</a></li>
+                                <li><a href="toefl.html">TOEFL</a></li>
+                                <li><a href="gmat.html">GMAT</a></li>
+                                <li><a href="sat.html">SAT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user" ></span> SignUp</a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="myHomeBody">
+            <div class="row home_header">
+                  <div class="col-md-7">
+                      <img src="images/studyabroadlogo.png">
+                  </div>
+
+                <div class="col-md-5 contact_info">
+                    <img src="images/phoneicon.png">
+                    <a href="tel:888-555-5555" > 888-555-5555</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="images/emailicon.png">
+                    <a href="mailto:studyabrod@gmail.com">studyabrod@gmail.com</a>
+                </div>
+            </div>       
+            
+            <div class="row">
+          
+                <div class="col-md-7 col-sm-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-traget="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="images/home1.jpg" alt="Image1"> 
+                            </div>
+
+                            <div class="item">
+                                <img src="images/home2.png" alt="Image2">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/home3.jpg" alt="Images3">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/home4.png" alt="Images4">
+                            </div>
+                        </div>
+
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">next</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-12">
+                    <h2 style="color: #ff6666">World famous private research</h2>
+                    <ul id="home_news_list">
+                        <li><a href="harvard.html">Ivy League Representative Harvard University</a></li>
+                        <li><a href="">ABC theory helps you manage your emotions</a></li>
+                        <li><a href="">Spring MIS application counterattack</a></li>
+                        <li><a href="">American Berkeley School of Music for application </a></li>
+                        <li><a href="">Master 's Degree for International Studies</a></li>
+                        <li><a href="">Australia "Ivy League" </a></li>
+                        <li><a href="">American masters studying abroad GPA results </a></li><br>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="home_recommend">
+                <h2>Institutions recommended</h2>
+                <div class="row">
+                    <div class="col-md-9 school">
+                        <div class="school_list">
+                            <div class="school_list_hz fl"><img src="images/mit.gif" width="75px" height="75px"></div>
+                            <div class="school_name fr">Massachusetts Institute of Technology</div>
+                        </div>
+
+                        <div class="school_list">
+                            <div class="school_list_hz fl"><img src="images/unh.png" width="75px" height="75px"></div>
+                            <div class="school_name fr">University of New Hampshire-Main </div>
+                        </div>
+                        
+                        <div class="school_list">
+                            <div class="school_list_hz fl"><img src="http://liuxue.xdf.cn/usa/postgraduate/yxtj/P020160519490739677859.jpg"></div>
+                            <div class="school_name fr">University of Perth Pace University</div>
+                        </div>
+                        
+                        <div class="school_list">
+                            <div class="school_list_hz fl"><img src="http://liuxue.xdf.cn/usa/postgraduate/yxtj/P020160519490339342923.jpg"></div>
+                            <div class="school_name fr">George Mason University</div>
+                        </div>
+                        
+                        <div class="school_list">
+                            <div class="school_list_hz fl"><img src="http://liuxue.xdf.cn/usa/postgraduate/yxtj/P020160519490016760466.jpg"></div>
+                            <div class="school_name fr">Auburn University</div>
+                        </div>
+
+                        <div class="school_list">
+                            <div class="school_list_hz fl"><img src="http://liuxue.xdf.cn/usa/postgraduate/yxtj/P020160519489471981137.jpg"></div>
+                            <div class="school_name fr">Saint Louis University-Main </div>
+                        </div>
+                        
+                        <div class="school_list">
+                            <div class="school_list_hz fl"><img src="http://liuxue.xdf.cn/usa/postgraduate/yxtj/P020160519489109229551.jpg"></div>
+                            <div class="school_name fr">Texas A & M University</div>
+                        </div>
+
+                        <div class="school_list">
+                            <div class="school_list_hz fl"><img src="http://liuxue.xdf.cn/usa/postgraduate/yxtj/P020160519484729111598.gif"></div>
+                            <div class="school_name fr">University of Connecticut</div>
+                        </div>
+
+                        <div class="school_list">
+                            <div class="school_list_hz fl"><img src="http://liuxue.xdf.cn/usa/postgraduate/yxtj/P020160519483106497670.png"></div>
+                            <div class="school_name fr">George Washington University</div>
+                        </div>
+
+                        <div style="float: right">
+                            <a href="collegeLib.html"><small>View More College Click Here >></small></a>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="col-md-3 case">
+                        <h4 style="font-family: 'Times New Roman', Times, serif; color: #FBB713">Successful Case</h4>
+                        <ul>
+                            <li><a href="">Dr. UCI Award</a></li>
+                            <li><a href="">The hearts of a dream: double non-sun </a></li>
+                            <li><a href="">Southern California EE admission </a></li>
+                            <li><a href="">Harvard Award</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="study_info">
+                <h2> Study Information</h2>
+                <div class="row">
+                    <div class="col-md-3 nav-list">
+                        <ul class="nav nav-tabs nav-stacked">
+                            <li><a data-toggle="tab" href="#country">Country</a></li>
+                            <li><a data-toggle="tab" href="#leaderboard">Leaderboard</a></li>
+                            <li><a data-toggle="tab" href="#course">Course</a></li>
+                            <li><a data-toggle="tab" href="#others">Others</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-md-9">
+                        <div class="tab-content">
+                            <!--Country-->
+                            <div class="tab-pane fade in active" id="country">
+                                <!--American-->
+                                <div class="col">
+                                    <h3>American</h3>
+                                    <ul>
+                                        <li><a>What are the errors and techniques for studying in the US?</a></li>
+                                        <li><a>How to stand out in only 40% of the American elite?</a></li>
+                                        <li><a>2017-18 years US study application process details</a></li>
+                                        <li><a>What are the seven types of successful applications?</a></li>
+                                        <li><a>How to stand out in only 40% of the American elite?</a></li>
+                                    </ul>
+                                </div>
+
+                                <!--Europe-->
+                                <div class="col">
+                                    <h3>Europe</h3>
+                                    <ul>
+                                        <li><a>French exams</a></li>
+                                        <li><a>French vocabulary accumulation method and experience</a></li>
+                                        <li><a>2017 France study time planning</a></li>
+                                        <li><a>Dutch study interview should be prepared in two ways</a></li>
+                                        <li><a>French study visa application for three interview skills</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!--Leaderboard-->
+                            <div class="tab-pane fade" id="leaderboard">
+                                <div class="col">
+                                    <h3>Leaderboard</h3>
+                                    <ul>
+                                        <li><a>2017 US NEWS Global University Ranking</a></li>
+                                        <li><a>2017 US NEWS American University Ranking</a></li>
+                                        <li><a>2017 European university rankings</a></li>
+                                        <li><a>2017 Canada university rankings</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!--Course-->
+                            <div class="tab-pane fade" id="course">
+                                <div class="col">
+                                    <h3>TOEFL</h3>
+                                    <iframe width="160px" height="90px;" src="https://www.youtube.com/embed/tPkfMf-FFW8" frameborder="0" allowfullscreen></iframe>
+                                    <h3>SAT</h3>
+                                    <iframe width="160px" height="90px" src="https://www.youtube.com/embed/D3cVy91El8c" frameborder="0" allowfullscreen></iframe>
+                                </div>
+
+                                <div class="col">
+                                    <h3>Courses We Have:</h3>
+                                    <ul>
+                                        <li><a>TOEFL Foundation</a></li>
+                                        <li><a>VIP TOEFL 6 classes </a></li>
+                                        <li><a>IELTS vocabulary classes</a></li>
+                                        <li><a>IELTS full-time hosting class </a></li>
+                                        <li><a>VIP GRE class</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!--Others-->
+                            <div class="tab-pane fade" id="others">
+                                <div class="col">
+                                    <h3>Other Information</h3>
+                                    <ul>
+                                        <li><a>US undergraduate study fee - living</a></li>
+                                        <li><a>2017 List of US study fees</a></li>
+                                        <li><a>2017 How much does the New Zealand </a></li>
+                                        <li><a>How much do you know about New Zealand</a></li>
+                                        <li><a>What is the advantage of French higher </a></li>
+                                        <li><a>Korean graduate application steps</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner">
+                <img src="images/StudyAbroadBanner.jpg" width="1080px" height="150px" alt="Study Abroad Banner">
+            </div>
+
+        </div>
+    </body>
+
+    <footer class="text-center" ng-app="myApp" ng-controller="myCtrl"> 
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>ABOUT US</h4>
+                <P style="text-align:left; color:#437772">Our purpose is to help everyone who want to study abroad! Contant us now!</P>
+                
+                <div class="contact-info">
+                    <ul>
+                        <li><a href="#" data-toggle="modal" data-target="#map"><span class="glyphicon glyphicon-home"></span></a>&nbsp;&nbsp;Huntington Avenue, Boston, MA, USA </li>
+                        <li><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;&nbsp;+1(800)-129-9003</li>
+                        <li><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;study@abroad.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal fade" id="map"  role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">x</button>
+                            <h3 style="color: #009999"><span class="glyphicon glyphicon-user"></span> Our Location</h3>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24768.25786001733!2d-71.10597143290397!3d42.33387951283982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a1999cf5ce1%3A0xc97b00e66522b98c!2sNortheastern+University!5e0!3m2!1sen!2sus!4v1492632863713" width="550" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                                <span class="glyphicon glyphicon-remove"></span>Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-md-4">
+                <h4>PHOTO GALLERY</h4>
+                <ul class="sidebar-gallery">
+                    <li><a href="#"><img src="images/gallery1.png" alt="gallery1" /></a></li>
+                    <li><a href="#"><img src="images/gallery2.png" alt="gallery2" /></a></li>
+                    <li><a href="#"><img src="images/gallery3.png" alt="gallery3" /></a></li>
+                    <li><a href="#"><img src="images/gallery4.png" alt="gallery4" /></a></li>
+                    <li><a href="#"><img src="images/gallery5.png" alt="gallery5" /></a></li>
+                    <li><a href="#"><img src="images/gallery6.png" alt="gallery6" /></a></li>					
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h4>NEWSLETTER REGISTRATION</h4>
+                <p style="text-align: left; color:#437772">Subscribe today to receive the latest news via email. 
+                You may unsubscribe from this service at any time.</p>
+                <form class="form-inline">
+                    <div class="form-group">		
+                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter your Email...">
+                    </div>
+                    <button type="submit" class="btn btn-default">Subscribe</button>
+                </form><br>
+                <div >
+                    <p>Do you like our webpage?</p>
+                    <p> {{count}} people like us!</p>
+                    <button id="likeBtn" ng-click="counter()"></button>
+                </div>
+            </div>
+        </div>
+        
+        <p>&copy;StudyAbroad</p>    
+        <nav class="socialmediaicons">
+            <p id="icons" class="socialmediaicons"></p>
+	    </nav>
+    </footer>
+
+
+</html>

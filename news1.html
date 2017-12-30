@@ -1,0 +1,446 @@
+<html lang="en">
+
+<head>
+    <title>News 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="main.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <style>
+        #NewsCommentMain {
+            width: 540px;
+            height: 300px;
+            margin: 0 auto;
+            margin-top: 0px;
+            padding: 20px 20px 20px 20px;
+        }
+        
+        .NewsCommentItem {
+            width: 100px;
+            height: 100%;
+            border: 1px solid #efefef;
+            float: left;
+            margin-left: 20px;
+        }
+        
+        .NewsCommentValue {
+            width: 50px;
+            height: 100px;
+            background-color: #f47920;
+            margin: 0 auto;
+            margin-bottom: 0px;
+            border: 1px solid #fff;
+        }
+        
+        .NewsCommentItem:hover .NewsCommentSpan {
+            display: block;
+        }
+        
+        .NewsCommentValue:hover {
+            -webkit-box-shadow: 0px 0px 5px #808080;
+            -moz-box-shadow: 0px 0px 5px #808080;
+            box-shadow: 0px 0px 5px #808080;
+        }
+        
+        .NewsCommentSpan {
+            width: 80px;
+            height: 30px;
+            background-color: #000;
+            float: left;
+            margin-top: -38px;
+            margin-left: -15px;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            display: none;
+        }
+        
+        .NewsCommentImg {
+            width: 60px;
+            height: 60px;
+            position: relative;
+            -webkit-box-shadow: 0px 0px 5px #ccc;
+            -moz-box-shadow: 0px 0px 5px #ccc;
+            box-shadow: 0px 0px 5px #ccc;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            margin: 0 auto;
+            margin-left: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        
+        .NewsCommentImg:hover {
+            border-color: #4e72b8;
+            -webkit-box-shadow: 0px 0px 5px #444693;
+            -moz-box-shadow: 0px 0px 5px #444693;
+            box-shadow: 0px 0px 5px #444693;
+        }
+        
+        .NewsCommentText {
+            font: 15px Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: 600;
+            line-height: 10px;
+            margin-top: 5px;
+        }
+        
+        .NewsCommentSpanTri {
+            position: absolute;
+            width: 10px;
+            height: 6px;
+            background-image: url(tri.png);
+            margin-top: 30px;
+            margin-left: -15px;
+        }
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbra">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                <a class="navbar-brand" href="#myPage">Study Abroad</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbra">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="signup.html"><span class="glyphicon glyphicon-user" ></span> SignUp</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="home">
+        <h1>Younger universities outdo old in attracting international talent – rankings</h1>
+        <div class="row">
+            <div class="col-sm-7 news-main">
+                <p>Amy | April 7, 2017</p>
+                <img src="images/news1.jpg" alt="The Rolex Learning Centre at École Polytechnique Fédérale de Lausanne." width="690">
+                <p>Newer universities do better than their older counterparts in attracting students from abroad as well as
+                    in publishing international research, a finding researchers say reveals the priorities of these younger
+                    schools.
+                </p>
+                <p>Older schools have the upper hand in funding, teaching and research, but trail behind the younger schools
+                    when it comes to internationalisation, the 2017 Times Higher Education (THE) Young University Rankings
+                    show.
+                </p>
+                <p>École Polytechnique Fédérale de Lausanne leads this year’s rankings of 200 institutions aged 50 and under,
+                    scoring the best overall across all measures. The Swiss school had also placed first in THE‘s World’s
+                    Most International Universities rankings.</p>
+                <p>The upper rungs were overall dominated by universities in wealthy Asian nations like Hong Kong and South
+                    Korea.
+                </p>
+                <p>Singapore’s Nanyang Technological University (NTU) president Professor Bertil Andersson says THE‘s latest
+                    findings “reaffirm NTU’s globally acknowledged strengths in teaching, research and working with our international
+                    partners and the industry”. NTU was ranked third in the list.</p>
+                <p>At the University of Technology, Sydney (15th place overall, 5th for internationalisation), more than one-third
+                    of its students are foreign, with a similar proportion of local students spending time studying abroad.
+                    Vice-chancellor Attila Brungs says their institution focuses on “preparing our students to be global
+                    professionals”
+                </p>
+                <p>The new rankings grouped the 200 institutions that featured in THE‘s World University Rankings according
+                    to their age group, such as millennials (founded from 2000 to the present day), Generation Y (1986-1999)
+                    and Generation X (1967-1985).</p>
+                <p>Generation Y universities, on the other hand, were found to draw the biggest proportion of foreign students
+                    on average, followed by the millennials group. Overall, traditional favourite study destination the United
+                    Kingdom had the most number (27) of universities in the table, followed by Australia with 23 institutions.</p>
+                <p>Here are the 10 universities that topped THE‘s rankings:</p>
+                <table border="1" class="myTable">
+                    <tbody>
+                        <tr>
+                            <th>Young University Rank 2017</th>
+                            <th>Young University Rank 2016</th>
+                            <th>World University Rank 2016-17</th>
+                            <th>Institution</th>
+                            <th>Country</th>
+                            <th>Year founded</th>
+                        </tr>
+                        <tr>
+                            <td class="tg-yw4l">1</td>
+                            <td class="tg-yw4l">1</td>
+                            <td class="tg-yw4l">30</td>
+                            <td class="tg-yw4l"><a href="https://www.epfl.ch/">École Polytechnique Fédérale de Lausanne</a></td>
+                            <td class="tg-yw4l">Switzerland</td>
+                            <td class="tg-yw4l">1969</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-yw4l">2</td>
+                            <td class="tg-yw4l">3</td>
+                            <td class="tg-yw4l">49</td>
+                            <td class="tg-yw4l"><a href="http://www.ust.hk/">Hong Kong University of Science and Technology</a></td>
+                            <td class="tg-yw4l">Hong Kong</td>
+                            <td class="tg-yw4l">1991</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-yw4l">3</td>
+                            <td class="tg-yw4l">2</td>
+                            <td class="tg-yw4l">54</td>
+                            <td class="tg-yw4l"><a href="http://www.ntu.edu.sg/">Nanyang Technological University</a></td>
+                            <td class="tg-yw4l">Singapore</td>
+                            <td class="tg-yw4l">1991</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-yw4l">4</td>
+                            <td class="tg-yw4l">5</td>
+                            <td class="tg-yw4l">104</td>
+                            <td class="tg-yw4l"><a href="http://www.postech.ac.kr/">Pohang University of Science and Technology</a></td>
+                            <td class="tg-yw4l">South Korea</td>
+                            <td class="tg-yw4l">1986</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-yw4l">5</td>
+                            <td class="tg-yw4l">6</td>
+                            <td class="tg-yw4l">89</td>
+                            <td class="tg-yw4l"><a href="http://www.kaist.edu/">Korea Advanced Institute of Science and Technology (KAIST)</a></td>
+                            <td class="tg-yw4l">South Korea</td>
+                            <td class="tg-yw4l">1971</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-yw4l">6</td>
+                            <td class="tg-yw4l">4</td>
+                            <td class="tg-yw4l">94</td>
+                            <td class="tg-yw4l"><a href="https://www.maastrichtuniversity.nl/">Maastricht University</a></td>
+                            <td class="tg-yw4l">Netherlands</td>
+                            <td class="tg-yw4l">1976</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-yw4l">7</td>
+                            <td class="tg-yw4l">20</td>
+                            <td class="tg-yw4l">119</td>
+                            <td class="tg-yw4l"><a href="http://www.cityu.edu.hk/">City University of Hong Kong</a></td>
+                            <td class="tg-yw4l">Hong Kong</td>
+                            <td class="tg-yw4l">1984</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-yw4l">8</td>
+                            <td class="tg-yw4l">13</td>
+                            <td class="tg-yw4l">135</td>
+                            <td class="tg-yw4l"><a href="http://www.uni-ulm.de/en/">Ulm University</a></td>
+                            <td class="tg-yw4l">Germany</td>
+                            <td class="tg-yw4l">1967</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-yw4l">9</td>
+                            <td class="tg-yw4l">8</td>
+                            <td class="tg-yw4l">144</td>
+                            <td class="tg-yw4l"><a href="https://www.kit.edu/english/">Karlsruhe Institute of Technology</a></td>
+                            <td class="tg-yw4l">Germany</td>
+                            <td class="tg-yw4l">2009</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-yw4l">9</td>
+                            <td class="tg-yw4l">10</td>
+                            <td class="tg-yw4l">190</td>
+                            <td class="tg-yw4l"><a href="http://www.santannapisa.it/en">Scuola Superiore Sant’Anna</a></td>
+                            <td class="tg-yw4l">Italy</td>
+                            <td class="tg-yw4l">1987</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h5 align="center">Leave your opinion here!</h5>
+
+                <div id="Demo" style="text-align:center;">
+                    <div id="NewsCommentMain"> </div>
+                </div>
+
+                <script type="text/javascript">
+                    $(document).ready(function (e) {
+                        NewsComment.Init();
+                    });
+                    var NewsComment = {
+                        NewsCommentJson: [
+                            { Name: "Good", Img: "images/Good.png", Value: 34 },
+                            { Name: "Boring", Img: "images/Boring.png", Value: 7 },
+                            { Name: "Doubtful", Img: "images/Doubtful.png", Value: 45 },
+                            { Name: "Funny", Img: "images/Funny.png", Value: 12 }
+                        ],
+                        Init: function () {
+                            for (var i = 0; i < NewsComment.NewsCommentJson.length; i++) {
+                                var mName = NewsComment.NewsCommentJson[i].Name;
+                                var mImg = NewsComment.NewsCommentJson[i].Img;
+                                var mValue = NewsComment.NewsCommentJson[i].Value;
+                                var NewsCommentItem = $("<div></div>");
+                                NewsCommentItem.attr("class", "NewsCommentItem");
+                                $("#NewsCommentMain").append(NewsCommentItem);
+
+                                var NewsCommentImg = $("<img title=\"Leave your opinion\" src=\"" + mImg + "\" />");
+                                NewsCommentImg.attr("class", "NewsCommentImg");
+                                NewsCommentImg.click(function () {
+                                    $(this).next().css("height", $(this).next().height() + 3 + "px");
+                                    $(this).next().css("margin-top", 150 - $(this).next().height() + "px");
+                                    $(this).next().find(".NewsCommentSpan").html($(this).next().height());
+                                    var NewsCommentSpanTri = $("<span></span>");
+                                    NewsCommentSpanTri.attr("class", "NewsCommentSpanTri");
+                                    $(this).next().find(".NewsCommentSpan").append(NewsCommentSpanTri);
+                                });
+                                NewsCommentItem.append(NewsCommentImg);
+
+                                var NewsCommentValue = $("<div></div>");
+                                NewsCommentValue.attr("class", "NewsCommentValue");
+                                NewsCommentValue.css("margin-top", 150 - mValue + "px");
+                                NewsCommentValue.animate({ height: mValue + "px" }, 500);
+                                NewsCommentItem.append(NewsCommentValue);
+
+                                var NewsCommentSpan = $("<div>" + mValue + "</div>");
+                                NewsCommentSpan.attr("class", "NewsCommentSpan");
+                                NewsCommentValue.append(NewsCommentSpan);
+
+                                var NewsCommentSpanTri = $("<span></span>");
+                                NewsCommentSpanTri.attr("class", "NewsCommentSpanTri");
+                                NewsCommentSpan.append(NewsCommentSpanTri);
+
+
+                                var NewsCommentText = $("<p></p>");
+                                NewsCommentText.html(mName);
+                                NewsCommentText.attr("class", "NewsCommentText");
+                                NewsCommentItem.append(NewsCommentText);
+                            }
+                        }
+                    }
+                </script>
+            </div>
+
+
+
+            <div class="col-sm-5 news-sidebar">
+                <div class="hot-news">
+                    <div class="hd">
+                        <h2>Hottest News</h2>
+                    </div>
+                    <div class="bd">
+                        <ul class="list">
+                            <li>
+                                <span class="number number-1">1</span>
+                                <a href="news1.html" title="Younger universities outdo old in attracting international talent – rankings">Younger universities outdo old in attracting international talent – rankings</a>
+                            </li>
+                            <li>
+                                <span class="number number-2">2</span>
+                                <a href="news2.html" title="The UConn Law Advantage">The UConn Law Advantage</a>
+                            </li>
+                            <li>
+                                <span class="number number-3">3</span>
+                                <a href="news3.html" title="Central European University has become battleground in Hungary’s war of ideas">Central European University has become battleground in Hungary’s war of ideas</a>
+                            </li>
+                            <li>
+                                <span class="number number-4">4</span>
+                                <a href="news4.html" title="From KFC worker to astronaut: First jobs of America’s spacemen">From KFC worker to astronaut: First jobs of America’s spacemen</a>
+                            </li>
+                            <li>
+                                <span class="number number-5">5</span>
+                                <a href="news5.html" title="5 UK universities you should consider for your Computing degree">5 UK universities you should consider for your Computing degree</a>
+                            </li>
+                            <li>
+                                <span class="number number-6">6</span>
+                                <a href="news6.html" title="Hong Kong: Students ready for long battle with China">Hong Kong: Students ready for long battle with China</a>
+                            </li>
+                            <li>
+                                <span class="number number-7">7</span>
+                                <a href="news7.html" title="Rising student debt could hurt US economy – Fed president">Rising student debt could hurt US economy – Fed president</a>
+                            </li>
+                            <li>
+                                <span class="number number-8">8</span>
+                                <a href="news8.html" title="Enter the world of Fashion and Design at Regent’s University London">Enter the world of Fashion and Design at Regent’s University London</a>
+                            </li>
+                            <li>
+                                <span class="number number-9">9</span>
+                                <a href="news9.html" title="Australia academic, home after being barred from leaving China, vows to return">Australia academic, home after being barred from leaving China, vows to return</a>
+                            </li>
+                            <li>
+                                <span class="number number-10">10</span>
+                                <a href="news10.html" title="The Trump effect? University loses foreign student appeal for first time in 12 years">The Trump effect? University loses foreign student appeal for first time in 12 years</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+</body>
+
+<footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <div class="row">
+        <div class="col-md-4">
+            <h4>ABOUT US</h4>
+            <P style="text-align:left; color:#437772">Our purpose is to help everyone who want to study abroad! Contant us now!</P>
+
+            <div class="contact-info">
+                <ul>
+                    <li><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Huntington Avenue, Boston, MA, USA </li>
+                    <li><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;&nbsp;+1(800)-129-9003</li>
+                    <li><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;study@abroad.com</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <h4>PHOTO GALLERY</h4>
+            <ul class="sidebar-gallery">
+                <li>
+                    <a href="#"><img src="images/gallery1.png" alt="gallery1" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/gallery2.png" alt="gallery2" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/gallery3.png" alt="gallery3" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/gallery4.png" alt="gallery4" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/gallery5.png" alt="gallery5" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/gallery6.png" alt="gallery6" /></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-4">
+            <h4>NEWSLETTER REGISTRATION</h4>
+            <p style="text-align: left; color:#437772">Subscribe today to receive the latest news via email. You may unsubscribe from this service at any time.</p>
+            <form class="form-inline">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter your Email...">
+                </div>
+                <button type="submit" class="btn btn-default">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <p>&copy;StudyAbroad</p>
+    <nav class="socialmediaicons">
+        <p id="icons" class="socialmediaicons"></p>
+    </nav>
+</footer>
+
+</html>

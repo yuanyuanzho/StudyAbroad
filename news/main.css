@@ -1,0 +1,73 @@
+body {
+      font: 400 15px/1.8 Helvetica, sans-serif;
+      color:#21618C;
+  }
+
+  .btn {
+      padding: 10px 20px;
+      background-color: #2E86C1;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #3498DB;
+      background-color: #fff;
+      color: #2E86C1;
+  }
+  .modal-header, h4, .close {
+      background-color: #3498DB;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  } 
+  .navbar {
+      font-family: Monaco, sans-serif;
+      margin-bottom: 0;
+      background-color: #85C1E9;
+      color:#FDFEFE;
+      border: 0;
+      font-size: 12px !important;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #2980B9 !important;
+      letter-spacing: 2px;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #5DADE2 !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+
+   .open .dropdown-toggle {
+      color: #fff;
+      background-color: #5DADE2 !important;
+  }
+  .dropdown-menu li a {
+      color: #2E86C1 !important;
+      
+  }
+  .dropdown-menu li a:hover {
+      background-color:#85C1E9;
+  }
+  footer {
+      background-color: #85C1E9;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
